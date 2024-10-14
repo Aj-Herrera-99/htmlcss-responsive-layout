@@ -29,16 +29,20 @@ img {
     --bg-light: #f6f5f3;
     --bg-white: #ffffff;
     --bg-contrast: #7C69A4;
-    --text-contrast: #7C69A4;
+    --text-contrast: #4E3969;
     --text-white: #ffffff;
+    --text-logo: #FF9614;
+    --text-grey: #999999;
+    --text-black: #000000;
     --gap-xl: 30px;
     --gap-lg: 20px;
     --gap-md: 10px;
+    --gap-sm: 7px;
 }
 
 /* containers, structure paddings and margins */
 .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     max-width: 1160px;
     margin-inline: auto;
 }
@@ -46,7 +50,7 @@ img {
 header,
 main,
 footer {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     padding-inline: 20px;
 }
 
@@ -85,6 +89,13 @@ footer {
     color: var(--text-white);
 }
 
+.text-grey {
+    color: var(--text-grey);
+}
+
+.text-contrast {
+    color: var(--text-contrast);
+}
 .bg-white {
     background-color: var(--bg-white);
 }
@@ -93,13 +104,13 @@ footer {
     background-color: var(--bg-contrast);
 }
 
-.text-contrast {
-    background-color: var(--text-contrast);
-}
 
 /* text props */
 .text-sm {
     font-size: .8rem;
+}
+.text-lg {
+    font-size: 2rem;
 }
 
 .text-center {
@@ -114,6 +125,16 @@ footer {
     text-transform: uppercase;
 }
 
+.text-thin {
+    font-weight: 400;
+}
+.text-regular {
+    font-weight: 500;
+}
+.text-black {
+    font-weight: 700;
+}
+
 .line-30 {
     line-height: 30px;
 }
@@ -123,6 +144,9 @@ footer {
 }
 
 /* spacers */
+.gap-sm {
+    gap: var(--gap-sm);
+}
 .gap-md {
     gap: var(--gap-md);
 }
@@ -171,10 +195,14 @@ header {
     text-align: center;
     font-size: 2.5rem;
     text-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    color: var(--text-logo);
 }
 
 /***** main *****/
 /* section description */
+.titles h1 {
+    font-size: 1.5rem;
+}
 .facebook {
     color: #183153;
 }
@@ -204,7 +232,7 @@ header {
     position: absolute;
     width: 35%;
     bottom: -10px;
-    border: 1px solid red;
+    border: 1px solid var(--text-logo);
 }
 
 .presentation .image {
@@ -224,5 +252,5 @@ footer ul {
 
 
 .debug {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
