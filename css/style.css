@@ -34,8 +34,8 @@ img {
     --text-logo: #FF9614;
     --text-grey: #999999;
     --text-black: #000000;
-    --gap-xl: 30px;
-    --gap-lg: 20px;
+    --gap-xl: 50px;
+    --gap-lg: 25px;
     --gap-md: 10px;
     --gap-sm: 7px;
 }
@@ -71,6 +71,9 @@ footer {
     flex-wrap: nowrap;
 }
 
+.items-center {
+    align-items: center;
+}
 .content-center {
     justify-content: center;
 }
@@ -96,6 +99,7 @@ footer {
 .text-contrast {
     color: var(--text-contrast);
 }
+
 .bg-white {
     background-color: var(--bg-white);
 }
@@ -109,6 +113,7 @@ footer {
 .text-sm {
     font-size: .8rem;
 }
+
 .text-lg {
     font-size: 2rem;
 }
@@ -128,9 +133,11 @@ footer {
 .text-thin {
     font-weight: 400;
 }
+
 .text-regular {
     font-weight: 500;
 }
+
 .text-black {
     font-weight: 700;
 }
@@ -147,6 +154,7 @@ footer {
 .gap-sm {
     gap: var(--gap-sm);
 }
+
 .gap-md {
     gap: var(--gap-md);
 }
@@ -203,6 +211,7 @@ header {
 .titles h1 {
     font-size: 1.5rem;
 }
+
 .facebook {
     color: #183153;
 }
@@ -253,4 +262,68 @@ footer ul {
 
 .debug {
     /* border: 1px solid red; */
+}
+
+/***************************************
+MEDIA QUERIES
+*****************************************/
+@media screen and (min-width: 768px) {
+    /* structure */
+    main,
+    footer {
+        padding-inline: 50px;
+    }
+
+    /* header */
+    header {
+        text-align: left;
+    }
+
+    /* description */
+    .titles h1 {
+        font-size: 2rem;
+    }
+
+    .info {
+        gap: var(--gap-xl);
+    }
+    .info-list {
+        flex-direction: row;
+        gap: 0;
+        row-gap: var(--gap-lg);
+    }
+    .info-list > li {
+        width: calc(100% / 3);
+    }
+
+    .d-toggle {
+        display: block;
+    }
+
+    /* brands */
+    .brands {
+        justify-content: flex-start;
+    }
+    .brands li {
+        width: calc((100% - calc(4 * var(--gap-lg))) / 5);
+    }
+
+    /* banner-1 */
+
+    /* presentation */
+    .presentation .image {
+        width: 40%;
+        float: left;
+        margin: 0 10px 0 0;
+    }
+
+    .presentation .clearfix {
+        margin-top: 40px;
+    }
+
+    .presentation .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
 }
