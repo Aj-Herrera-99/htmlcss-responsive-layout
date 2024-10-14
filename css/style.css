@@ -36,7 +36,7 @@ img {
     --text-black: #000000;
     --gap-xl: 50px;
     --gap-lg: 25px;
-    --gap-md: 10px;
+    --gap-md: 13px;
     --gap-sm: 7px;
 }
 
@@ -271,7 +271,8 @@ footer li a {
 
 footer ul {
     margin-top: 20px;
-}
+    }
+
 
 
 .debug2 {
@@ -302,13 +303,14 @@ MEDIA QUERIES
     }
 
     /* IMMAGINE VA IN OVERFLOW RISOLVERE */
+    .recipe-info {
+        flex-direction: row;
+    }
     .thumbnail {
-        /* border: 2px solid green; */
+        width: 100%;
     }
 
     .thumbnail img {
-        aspect-ratio: 16/9;
-        max-height: 420px;
     }
 
     .info {
@@ -361,17 +363,20 @@ MEDIA QUERIES
 
     .recipe-info {
         flex-direction: row;
+        flex-wrap: nowrap;
     }
+
     .thumbnail {
-        width: 70%;
+        height: fit-content;
     }
 
     .info {
-        width: 30%;
+        gap: var(--gap-lg);
     }
 
     .info-list {
         flex-direction: column;
+        gap: var(--gap-md);
     }
     .info-list > li {
         width: 100%;
