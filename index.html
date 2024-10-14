@@ -8,33 +8,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- header -->
-    <header>
-        <div class="logo">
+    <header class="bg-white">
+        <div class="logo text-upper">
             giallo booleano
         </div>
     </header>
     <!-- main -->
     <main>
         <section id="description">
-            <div class="container">
+            <div class="description d-flex flex-col gap-lg container">
                 <!-- titoli -->
-                <div class="titles"></div>
+                <div class="titles">
+                    <h3 class="text-upper">dolci e desserts</h3>
+                    <h2>Tiramisù <span class="d-toggle">(Dolce Tradizionale)</span></h2>
+                </div>
                 <!-- thumbnail e info in breve -->
-                <div class="recipe-info">
+                <div class="recipe-info d-flex flex-col gap-lg bg-white shadow-md">
                     <div class="thumbnail">
-                        thumbnail
+                        <img src="img/image (10).png" alt="thumbnail tiramisù">
                     </div>
-                    <div class="info">
-                        info
+                    <div class="info d-flex flex-col gap-lg">
+                        <h4>In breve</h4>
+                        <ul class="d-flex flex-col gap-md">
+                            <li>Difficoltà: <span>Facile</span></li>
+                            <li>Tempo: <span>40 min</span></li>
+                            <li>Porzione per: <span>8 persone</span></li>
+                            <li>Costo: <span>contenuto</span></li>
+                            <li>Note: <span>+2 ore di riposo in frigo</span></li>
+                        </ul>
                     </div>
                 </div>
                 <!-- social -->
-                <ul>
+                <ul class="d-flex">
                     <li>fb</li>
                     <li>fb</li>
                     <li>fb</li>
@@ -49,7 +64,7 @@
             </div>
         </aside>
         <section id="presentation">
-            <div class="container">
+            <div class="presentation container">
                 <h2>presentation</h2>
                 <div class="text">
                     <div class="image">
