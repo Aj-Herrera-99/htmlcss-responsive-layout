@@ -14,6 +14,7 @@ ul {
 a {
     color: inherit;
     text-decoration: none;
+    display: block;
 }
 
 img {
@@ -58,6 +59,9 @@ footer {
 .nowrap {
     flex-wrap: nowrap;
 }
+.content-between {
+    justify-content: space-between;
+}
 /* shadows */
 .shadow-md {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
@@ -86,6 +90,16 @@ footer {
 .gap-lg { 
     gap: var(--gap-lg);
 }
+.p-35-30 {
+    padding: 35px 30px;
+}
+.p-brand {
+    padding: 10px 15px;
+}
+/* borders */
+.bd-xl {
+    border-radius: 35px;
+}
 /************************************************
 BODY
 **************************************************/
@@ -108,3 +122,15 @@ header {
 }
 
 /***** main *****/
+.facebook {
+    color: #183153;
+}
+.twitter {
+    color: #009EFF;
+}
+.instagram {
+    color: #DC3DA3;
+}
+.pinterest, .youtube {
+    color: #E62222;
+}
