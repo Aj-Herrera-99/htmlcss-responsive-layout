@@ -278,7 +278,7 @@ footer ul {
     /* border: 3px solid blue; */
 }
 .debug {
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 
 /***************************************
@@ -303,11 +303,12 @@ MEDIA QUERIES
 
     /* IMMAGINE VA IN OVERFLOW RISOLVERE */
     .thumbnail {
-        /* border: 3px solid green; */
+        /* border: 2px solid green; */
     }
 
     .thumbnail img {
-        
+        aspect-ratio: 16/9;
+        max-height: 420px;
     }
 
     .info {
