@@ -301,9 +301,6 @@ MEDIA QUERIES
     }
 
     /* brands */
-    .brands {
-        justify-content: flex-start;
-    }
     .brands li {
         width: calc((100% - calc(4 * var(--gap-lg))) / 5);
     }
