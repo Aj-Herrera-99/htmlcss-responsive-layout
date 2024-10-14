@@ -159,9 +159,21 @@ header {
     color: #E62222;
 }
 /* section presentation */
+.presentation h2 {
+    display: inline-block;
+    position: relative;
+}
+.presentation h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 35%;
+    bottom: -10px;
+    border: 1px solid red;
+}
 .presentation .image {
     width: 50%;
-    margin: 20px auto;
+    margin: 30px auto 20px;
 }
 
 /***** footer ******/
