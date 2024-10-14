@@ -71,6 +71,9 @@ footer {
     flex-wrap: nowrap;
 }
 
+.items-start {
+    align-items: flex-start;
+}
 .items-center {
     align-items: center;
 }
@@ -212,6 +215,17 @@ header {
     font-size: 1.5rem;
 }
 
+.brands {
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.brands span {
+    display: none;
+}
+
+
 .facebook {
     color: #183153;
 }
@@ -260,8 +274,11 @@ footer ul {
 }
 
 
+.debug2 {
+    /* border: 3px solid blue; */
+}
 .debug {
-    /* border: 1px solid red; */
+    border: 3px solid red;
 }
 
 /***************************************
@@ -282,6 +299,15 @@ MEDIA QUERIES
     /* description */
     .titles h1 {
         font-size: 2rem;
+    }
+
+    /* IMMAGINE VA IN OVERFLOW RISOLVERE */
+    .thumbnail {
+        /* border: 3px solid green; */
+    }
+
+    .thumbnail img {
+        
     }
 
     .info {
@@ -323,4 +349,46 @@ MEDIA QUERIES
         clear: both;
         display: table;
       }
+}
+
+@media screen and (min-width: 992px) { 
+     /* description */
+     .titles h1 {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+
+    .recipe-info {
+        flex-direction: row;
+    }
+    .thumbnail {
+        width: 70%;
+    }
+
+    .info {
+        width: 30%;
+    }
+
+    .info-list {
+        flex-direction: column;
+    }
+    .info-list > li {
+        width: 100%;
+    }
+
+    .brands span {
+        display: block;
+    }
+
+    /* footer */
+    footer {
+        padding-inline: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer address {
+        align-items: flex-start;
+    }
 }
