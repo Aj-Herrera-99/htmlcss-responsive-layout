@@ -215,6 +215,10 @@ header {
     font-size: 1.5rem;
 }
 
+.thumbnail {
+    cursor: pointer;
+}
+
 .brands {
     font-weight: 700;
     font-style: normal;
@@ -310,9 +314,6 @@ MEDIA QUERIES
         width: 100%;
     }
 
-    .thumbnail img {
-    }
-
     .info {
         gap: var(--gap-xl);
     }
@@ -367,10 +368,11 @@ MEDIA QUERIES
     }
 
     .thumbnail {
-        height: fit-content;
+        width: auto;
     }
 
     .info {
+        flex-grow: 1;
         gap: var(--gap-lg);
     }
 
